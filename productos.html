@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Super Pura - Productos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        body.claro {
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        body.oscuro {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+        header {
+            background-color: #c62828;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f5c542;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #c62828;
+        }
+
+        footer {
+            background-color: #c62828;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background-color: rgba(255,255,255,0.95);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        body.oscuro section {
+            background-color: #2a2a2a;
+        }
+        .btn-tema {
+            margin-top: 10px;
+            padding: 8px 12px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+            background-color: #f5c542;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th {
+            background-color: #c62828;
+            color: #ffffff;
+        }
+
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+    .logo-header {
+        max-width: 90px;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+    .logo-grande {
+        max-width: 100px;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+    </style>
+</head>
+<body class="claro"></body>
+<img src="img/logo-superpura.jpg" alt="Logo Super Pura" class="logo-header">
+<header>
+    <h1>Productos Super Pura</h1>
+    <button class="btn-tema" onclick="cambiarTema()">
+            Cambiar fondo
+        </button>
+</header>
+<nav>
+    <a href="Index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="Contacto.html">Contacto</a>
+</nav>
+<main>
+    <section>
+        <h2>Nuestros Productos</h2>
+         <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Presentación</th>
+                        <th>Precio</th>
+                        <th>Vendedor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mantequilla Normal</td>
+                        <td>12.5 kg</td>
+                        <td>$4.000</td>
+                        <td>300 123 4567</td>
+                    </tr>
+                    <tr>
+                        <td>Mantequilla Semi Pura</td>
+                        <td>12.5 kg</td>
+                        <td>$5.000</td>
+                        <td>300 123 4567</td>
+                    </tr>
+                    <tr>
+                        <td>Mantequilla Pura</td>
+                        <td>12.5 kg</td>
+                        <td>$6.000</td>
+                        <td>300 123 4567</td>
+                    </tr>
+                    <tr>
+                        <td>Mantequilla Premium</td>
+                        <td>12.5 kg</td>
+                        <td>$7.500</td>
+                        <td>300 123 4567</td>
+                    </tr>
+                    <tr>
+                        <td>Manteca de cerdo</td>
+                        <td>500 g</td>
+                        <td>$6.500</td>
+                        <td>300 123 4567</td>
+                    </tr>
+                    <tr>
+                        <td>Grageas chips</td>
+                        <td>200 g</td>
+                        <td>$4.500</td>
+                        <td>300 123 4567</td>
+                    </tr>
+                    <tr>
+                        <td>Cobertura de chocolate</td>
+                        <td>12.5 kg</td>
+                        <td>$5.800</td>
+                        <td>300 123 4567</td>
+                    </tr>
+                    <tr>
+                        <td>Azúcar pulverizado</td>
+                        <td>500 g</td>
+                        <td>$3.500</td>
+                        <td>300 123 4567</td>
+                    </tr>
+                    <tr>
+                        <td>Arroba de Bocadillo</td>
+                        <td>12.5 kg</td>
+                        <td>$8.000</td>
+                        <td>300 123 4567</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+        <img src="img/logo-superpura.jpg" alt="Logo Super Pura" class="logo-grande">
+    <footer>
+        <p>&copy; 2026 Super Pura. Todos los derechos reservados.</p>
+    </footer> 
+    <script>
+        function cambiarTema() {
+            document.body.classList.toggle("oscuro");
+            document.body.classList.toggle("claro");
+        }
+    </script>
+</body>
+</html>

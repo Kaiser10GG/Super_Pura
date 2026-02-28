@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Super Pura Inicio</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        body.claro {
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        body.oscuro {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+
+        header {
+            background-color: #c62828;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f5c542;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #c62828;
+        }
+
+        footer {
+            background-color: #c62828;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        body.oscuro section {
+            background-color: #2a2a2a;
+        }
+
+        img {
+            display: block;
+            margin: 15px auto;
+            border-radius: 8px;
+        }
+
+        .btn-tema {
+            margin-top: 10px;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 4px;
+            background-color: #f5c542;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table th {
+            background-color: #c62828;
+            color: #ffffff;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+ .logo-header {
+        max-width: 90px;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+    .logo-grande {
+        max-width: 100px;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+        }
+    </style>
+</head>
+<body class="claro"></body>
+<img src="img/logo-superpura.jpg" alt="Logo Super Pura" class="logo-header">
+    <header>
+    <h1>Inicio Super Pura</h1>
+    <button class="btn-tema" onclick="cambiarTema()">
+            Cambiar tema
+        </button>
+</header>
+<nav>
+    <a href="Index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="Contacto.html">Contacto</a>
+</nav>
+<main>
+    <section>
+        <h2>Bienvenidos a Super Pura</h2>
+        <p>Super Pura es una empresa dedicada a los productos de matequilla y productos lacteros de alta calidad. Nuestra tradicion se basa en el uso de ingredientes naturales y procesos artesanales que garantizan el sabor y la frescura de nuestros productos.</p>
+        <img src="img/logo-superpura.jpg" alt="Logo Super Pura" class="logo-grande">
+    </section>
+</main>
+<footer>
+    <p>&copy; 2026 Super Pura. Todos los derechos reservados.</p>
+</footer>
+<script>
+        function cambiarTema() {
+            document.body.classList.toggle("oscuro");
+            document.body.classList.toggle("claro");
+        }
+    </script>
+</body>
+</html>

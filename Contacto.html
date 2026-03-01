@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Super Pura - Contacto</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        body.claro {
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        body.oscuro {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+        header {
+            background-color: #c62828;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f5c542;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #c62828;
+        }
+
+        footer {
+            background-color: #c62828;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background-color: rgba(255,255,255,0.95);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        body.oscuro section {
+            background-color: #2a2a2a;
+        }
+        form div {
+            margin-bottom: 12px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #f5c542;
+            border: none;
+            padding: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .btn-tema {
+            margin-top: 10px;
+            padding: 8px 12px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            background-color: #f5c542;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 8px;
+        }
+        .logo-header {
+        max-width: 90px;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+        }
+    .contacto-contenedor {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+    .formulario {
+        width: 45%;
+        text-align: left;
+    }
+
+    .formulario label {
+        font-weight: bold;
+    }
+
+    .formulario input,
+    .formulario textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 6px 0 12px;
+    }
+
+    .formulario button {
+        background-color: #c62828;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .mapa {
+        width: 50%;
+    }
+    @media (max-width: 768px) {
+        .contacto-contenedor {
+            flex-direction: column;
+        }
+
+        .formulario,
+        .mapa {
+            width: 100%;
+        }
+    }
+    </style>
+</head>
+
+<body class="claro">
+ <img src="img/logo-superpura.jpg" alt="Logo Super Pura" class="logo-header">
+    <header>
+        <h1>Contacto Super Pura</h1>
+        <p>Comunícate con nosotros</p>
+
+        <button class="btn-tema" onclick="cambiarTema()">
+            Cambiar fondo
+        </button>
+    </header>
+    <nav>
+        <a href="Index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="Contacto.html">Contacto</a>
+    </nav>
+    <main>
+       <h2>Contáctanos</h2>
+    <div class="contacto-contenedor">
+        <div class="formulario">
+            <form>
+                 <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Tu nombre completo" required>
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" placeholder="Tu correo electrónico" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" placeholder="Ej: 3001234567" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" placeholder="Tu dirección">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+</form>
+            </form>
+        </div>
+
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps?q=Plaza%20de%20Bolivar%20Tunja%20Boyaca&output=embed"
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>© 2026 Super Pura</p>
+    </footer>
+    <script>
+        function cambiarTema() {
+            document.body.classList.toggle("oscuro");
+            document.body.classList.toggle("claro");
+        }
+    </script>
+
+</body>
+</html>
